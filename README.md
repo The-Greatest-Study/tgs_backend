@@ -4,7 +4,7 @@
 
 #### :pencil2: 사전 준비 사항
 
-- <a href="https://www.oracle.com/kr/java/technologies/javase/jdk11-archive-downloads.html">Java 11</a> 버전 다운로드 및 환경 변수 세팅
+- <a href="https://www.oracle.com/kr/java/technologies/javase/jdk11-archive-downloads.html">Java 11</a> 버전 다운로드 및 <a href="https://blog.naver.com/PostView.naver?blogId=cmh348&logNo=222110413109">환경 변수 세팅</a>
 
 
 
@@ -13,7 +13,7 @@
 1. 프로젝트 Clone 받기
 
 ```bash
-$ git clone 
+$ git clone https://github.com/The-Greatest-Study/tgs_backend.git
 ```
 
 
