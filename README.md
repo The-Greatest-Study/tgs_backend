@@ -1,14 +1,14 @@
 # TGS 프로젝트 Backend
 
-### :gear: 프로젝트 환경 설정
+## :gear: 프로젝트 환경 설정
 
-:pencil2: **사전 준비 사항**
+#### :pencil2: 사전 준비 사항
 
 - <a href="https://www.oracle.com/kr/java/technologies/javase/jdk11-archive-downloads.html">Java 11</a> 버전 다운로드 및 환경 변수 세팅
 
 
 
-**:computer: 프로젝트 실행 방법**
+#### :computer: 프로젝트 실행 방법
 
 1. 프로젝트 Clone 받기
 
