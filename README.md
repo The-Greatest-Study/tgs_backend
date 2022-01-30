@@ -26,6 +26,6 @@ $ ./gradlew bootRun
 
 
 
-3. http://localhost:8080 으로 접속했을 시, 아래와 같은 화면이 뜨면 접속 성공! (추후 수정 예정입닏자)
+3. http://localhost:8080 으로 접속했을 시, 아래와 같은 화면이 뜨면 접속 성공! (추후 수정 예정입니다)
 
-![Screen Shot 2022-01-30 at 2.38.31 PM](assets/Screen Shot 2022-01-30 at 2.38.31 PM.png)
+![Screen Shot 2022-01-30 at 2.38.31 PM](assets/readme1.png)
