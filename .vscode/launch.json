@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-TgsBackendApplication<tgs_backend>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "com.tgs.tgs_backend.TgsBackendApplication",
+      "projectName": "tgs_backend",
+      "args": ""
+    }
+  ]
+}
