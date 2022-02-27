@@ -23,9 +23,9 @@ public class UserApiController {
     }
 
     @GetMapping("")
-    public List<User> userList(@RequestParam String userId,
-                               @RequestParam String userNm) {
-        return userService.findAllByUserIdOrUserNm(userId, userNm);
+    public List<User> userList(@RequestParam(required = false)String userId,
+                               @RequestParam(required = false) String userNm) {
+        return userService.findByUserIdOrUserNmContaining(userId, userNm);
     }
 
     @PostMapping("/create")

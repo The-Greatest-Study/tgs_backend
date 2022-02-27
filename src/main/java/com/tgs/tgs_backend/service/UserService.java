@@ -18,8 +18,8 @@ public class UserService {
         return userRepository.findByUserId(userId);
     }
 
-    public List<User> findAllByUserIdOrUserNm(String userId, String userNm) {
-        return userRepository.findAllByUserIdOrUserNm(userId, userNm);
+    public List<User> findByUserIdOrUserNmContaining(String userId, String userNm) {
+        return userRepository.findByUserIdOrUserNmContaining(userId, userNm);
     }
 
     public String save(User user) {
