@@ -31,4 +31,30 @@ public class UserService {
         return user.getUserId();
     }
 
+    public String userUpdate(String userId, User newUser) {
+        Optional<User> oldUser = findByUserId(userId);
+
+        if (oldUser.isPresent()) {
+            User user = oldUser.get();
+            user.setUserNm(newUser.getUserNm());
+            user.setUserBday(newUser.getUserBday());
+            user.setUseYn(newUser.getUseYn());
+            user.setActiveYn(newUser.getActiveYn());
+            user.setAdminYn(newUser.getAdminYn());
+            user.setGender(newUser.getGender());
+            user.setPw(newUser.getPw());
+            userRepository.save(user);
+            return user.getUserId();
+        }
+        return null;
+    }
+
+    public void delete(String userId) {
+        Optional<User> user = findByUserId(userId);
+
+        if (user.isPresent()) {
+            userRepository.delete(user.get());
+        }
+    }
+
 }

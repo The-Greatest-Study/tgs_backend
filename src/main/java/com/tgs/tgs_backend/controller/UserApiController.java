@@ -33,14 +33,14 @@ public class UserApiController {
         return userService.save(user);
     }
 
-//    @PostMapping("/{userId}/update")
-//    public Optional<User> userUpdate(@PathVariable String userId,
-//                                     @RequestBody @Validated User user) {
-//        Optional<User> oldUser = userService.findByUserId(userId);
-//        if (oldUser.isPresent()) {
-//            continue;
-//        }
-//    }
-//
-//    @DeleteMapping("/{userId}/delete")
+    @PostMapping("/{userId}/update")
+    public String userUpdate(@PathVariable String userId,
+                                     @RequestBody @Validated User newUser) {
+        return userService.userUpdate(userId, newUser);
+    }
+
+    @DeleteMapping("/{userId}/delete")
+    public void userDelete(@PathVariable String userId) {
+        userService.delete(userId);
+    }
 }
