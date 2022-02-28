@@ -18,24 +18,24 @@ public class UserApiController {
     private final UserService userService;
 
     @GetMapping("/{userId}")
-    public Optional<User> userDetail(@PathVariable String userId) {
+    public User userDetail(@PathVariable String userId) {
         return userService.findByUserId(userId);
     }
 
     @GetMapping("")
-    public List<User> userList(@RequestParam(required = false)String userId,
-                               @RequestParam(required = false) String userNm) {
+    public List<User> userList(@RequestParam(required = false, defaultValue = "") String userId,
+                               @RequestParam(required = false, defaultValue = "") String userNm) {
         return userService.findByUserIdOrUserNmContaining(userId, userNm);
     }
 
     @PostMapping("/create")
-    public String userCreate(@RequestBody @Validated User user) {
+    public User userCreate(@RequestBody @Validated User user) {
         return userService.save(user);
     }
 
     @PostMapping("/{userId}/update")
-    public String userUpdate(@PathVariable String userId,
-                                     @RequestBody @Validated User newUser) {
+    public User userUpdate(@PathVariable String userId,
+                           @RequestBody @Validated User newUser) {
         return userService.userUpdate(userId, newUser);
     }
 
