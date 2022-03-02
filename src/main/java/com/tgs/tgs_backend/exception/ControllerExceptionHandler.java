@@ -13,4 +13,10 @@ public class ControllerExceptionHandler {
     String userNotFoundHandler(UserNotFoundException ex) {
         return ex.getMessage();
     }
+
+    @ExceptionHandler(DuplicateUserException.class)
+    @ResponseStatus(value = HttpStatus.NOT_FOUND)
+    String duplicateUserException(DuplicateUserException ex) {
+        return ex.getMessage();
+    }
 }
