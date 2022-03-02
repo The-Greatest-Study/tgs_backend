@@ -109,5 +109,8 @@ gradle-app.setting
 
 .idea/
 
+### Bin Folder ###
+bin/
+
 # End of https://www.toptal.com/developers/gitignore/api/gradle
 # Test
