@@ -35,12 +35,6 @@ dependencies {
 
 }
 
-jar {
-	manifest {
-		attributes 'Main-Class': com.tgs.tgs_backend.TgsBackendApplication
-	}
-}
-
 tasks.named('test') {
 	useJUnitPlatform()
 }
