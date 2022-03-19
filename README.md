@@ -29,3 +29,13 @@ $ ./gradlew bootRun
 3. http://localhost:8080 으로 접속했을 시, 아래와 같은 화면이 뜨면 접속 성공!
 
 ![열씨미 공부하는 고앵이](assets/main.png)
+
+#### :chart_with_upwards_trend: API 사용 방법
+
+별도의 개발 환경 설정 없이, 배포된 API만 사용하기를 원한다면, 아래 url로 접속하여 사용하시면 됩니다.
+
+```
+https://the-greatest-study.herokuapp.com/<상세경로>
+```
+
+:white_check_mark: 상세 API 리스트: <a href="https://www.notion.so/API-9ac22ff286c14c16a2093438c951a870">바로가기</a>
