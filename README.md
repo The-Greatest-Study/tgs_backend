@@ -8,7 +8,7 @@
 
 
 
-#### :computer: 프로젝트 실행 방법
+#### :computer: 프로젝트 실행 방법 (로컬 개발 환경)
 
 1. 프로젝트 Clone 받기
 
@@ -30,7 +30,7 @@ $ ./gradlew bootRun
 
 ![열씨미 공부하는 고앵이](assets/main.png)
 
-#### :chart_with_upwards_trend: API 사용 방법
+#### :chart_with_upwards_trend: API 사용 방법 (개발 환경 설정 없이)
 
 별도의 개발 환경 설정 없이, 배포된 API만 사용하기를 원한다면, 아래 url로 접속하여 사용하시면 됩니다.
 
